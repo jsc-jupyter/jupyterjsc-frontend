@@ -1,12 +1,12 @@
 {%- import "macros/svgs.jinja" as svg -%}
 
-{%- set show_announcement = false %}
+{%- set show_announcement = true %}
 {%- macro announcement() %}
 <div class="alert bg-info alert-dismissible fade show" style="color: #023d6b;" role="alert">
   <h4 class="alert-heading">       
     {{ svg.announcement_svg | safe }}
-    <span class="align-middle">JUSUF / DEEP issues</span>
+    <span class="align-middle">JSC-Login issues</span>
   </h4>
-  We are currently experiencing issues when starting Jupyter servers on JUSUF and DEEP. Our team is actively working on resolving the problem.
+  We are currenyly experiencing timeouts when sending requests to the JSC-Login service. This may lead to stopped JupyterLabs and problems during login.
 </div>
 {%- endmacro %}
